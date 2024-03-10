@@ -1,0 +1,22 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Modem Syncer
+version: "0.0.1"
+slug: modemsyncer
+description: modemsyncer addon
+url: "https://github.com/dydoc/addon-modem-syncer.git"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+# options:
+#   message: "Hello world..."
+# schema:
+#   message: "str?"
+homeassistant_api: true
+services:
+  - mqtt:need
